@@ -1,0 +1,13 @@
+description: Block Shodan scanners
+
+prototypes:
+  Shodan:
+    author: Aditya Sripal
+    description: Mines known shodan scanner ip addresses
+    class: minemeld.ft.shodan.ShodanMiner
+    node_type: miner
+    config:
+      source_name: wiki.ipfire
+      age_out:
+        sudden_death: true
+        default: null
